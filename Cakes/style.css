@@ -1,0 +1,293 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Common styles */
+
+img,
+.mobile-menu ul {
+  width: 100%;
+}
+
+img,
+button {
+  border-radius: 10px;
+}
+
+.introduction,
+.cakes,
+.other-categories {
+  padding: 0 50px;
+}
+
+body,
+.mobile-menu,
+header,
+.introduction,
+.cakes,
+.cakes-container,
+.cake,
+.other-categories,
+.categories,
+footer {
+  display: flex;
+}
+
+body,
+.mobile-menu,
+.introduction,
+.cakes,
+.cakes-container,
+.cake,
+.other-categories,
+.categories,
+footer {
+  flex-direction: column;
+}
+
+header,
+.cakes,
+.cake,
+footer {
+  align-items: center;
+}
+
+.mobile-menu,
+header,
+button,
+footer {
+  background-color: #ffafcc;
+}
+
+.mobile-menu img,
+header img,
+footer img {
+  width: 32px;
+}
+
+.mobile-menu {
+  justify-content: center;
+}
+
+.mobile-menu,
+.introduction,
+.other-categories,
+footer {
+  text-align: center;
+}
+
+a,
+.mobile-menu,
+.items,
+button,
+.category .title,
+footer {
+  color: white;
+}
+
+.introduction,
+.cake,
+.other-categories,
+.categories,
+footer {
+  row-gap: 30px;
+}
+
+.mobile-menu img,
+.items,
+.category .title {
+  position: absolute;
+}
+
+body,
+.cakes,
+.cakes-container {
+  overflow-x: hidden;
+  row-gap: 50px;
+}
+
+.title,
+.cake p:nth-child(2) {
+  color: #ffafcc;
+}
+
+.introduction p:nth-child(2),
+.cake p:nth-child(3) {
+  color: #a2d2ff;
+}
+
+header li:nth-child(2),
+button {
+  cursor: pointer;
+}
+
+.mobile-menu li:nth-child(2),
+header li:nth-child(2),
+.title {
+  font-weight: bold;
+}
+
+.mobile-menu,
+header {
+  position: fixed;
+  width: 100vw;
+}
+
+.mobile-menu {
+  visibility: hidden;
+  height: 100vh;
+  z-index: 2;
+}
+
+header {
+  z-index: 1;
+}
+
+header img:first-child:not(.logo) {
+  margin-left: 50px;
+}
+
+header a:last-child:not(ul a) {
+  margin-right: 50px;
+}
+
+.introduction {
+  margin-top: 142px;
+}
+
+.mobile-menu img {
+  top: 30px;
+  right: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.mobile-menu li {
+  font-size: 1.5rem;
+  padding: 20px 0;
+  border-top: solid white 2px;
+}
+
+.last {
+  border-bottom: solid white 2px;
+}
+
+header {
+  justify-content: space-between;
+}
+
+header a:nth-child(2),
+.logo {
+  width: 92px;
+  height: 92px;
+}
+
+header ul {
+  display: none;
+}
+
+.title {
+  font-size: 32px;
+}
+
+.items {
+  background-color: red;
+  padding: 0 2px;
+  border-radius: 50%;
+}
+
+button {
+  border: none;
+  padding: 10px 30px;
+}
+
+.category {
+  position: relative;
+}
+
+.category .title {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.category img {
+  max-width: max-content;
+}
+
+footer {
+  padding: 28px 0;
+}
+
+@media (min-width: 992px) {
+  body,
+  .cakes-container {
+    row-gap: 100px;
+  }
+
+  .introduction,
+  .cakes,
+  .other-categories {
+    padding: 0 100px;
+  }
+
+  .cakes-container,
+  .categories,
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+
+  .cakes-container,
+  .categories {
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+
+  .cake img,
+  .category img {
+    width: 381px;
+  }
+
+  header img:first-child:not(a img) {
+    display: none;
+  }
+
+  header a:nth-child(2):not(ul a) {
+    margin-left: 100px;
+  }
+
+  header a:last-child:not(ul a) {
+    margin-right: 100px;
+  }
+
+  .introduction {
+    margin-top: 192px;
+  }
+
+  header ul {
+    display: flex;
+    column-gap: 20px;
+    color: white;
+  }
+
+  header li:nth-child(2) {
+    text-decoration: underline #a2d2ff solid 3px;
+  }
+
+  footer {
+    padding: 28px 100px;
+  }
+}

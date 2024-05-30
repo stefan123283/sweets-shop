@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../Common Images/logo.png" type="image/x-icon">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mobile-menu">
+      <img src="../Common Images/x.svg" alt="close icon" />
+      <ul>
+        <a href="../index.html">
+          <li>Home</li>
+        </a>
+        <a href="../Cakes/cakes.html">
+          <li>Cakes</li>
+        </a>
+        <a href="../Chocolates/chocolates.html">
+          <li>Chocolates</li>
+        </a>
+        <a href="../Macarons/macarons.html">
+          <li>Macarons</li>
+        </a>
+        <a href="../Biscuits/biscuits.html">
+          <li>Biscuits</li>
+        </a>
+        <a href="../About Us/about-us.html">
+          <li>About us</li>
+        </a>
+        <li class="last">Cart</li>
+      </ul>
+    </div>
+    <header>
+      <img src="../Common Images/burger-menu.svg" alt="menu" />
+      <a href="../index.html">
+        <img class="logo" src="../Common Images/logo.png" alt="logo" />
+      </a>
+      <ul>
+        <a href="../index.html">
+          <li>Home</li>
+        </a>
+        <a href="../Cakes/cakes.html">
+          <li>Cakes</li>
+        </a>
+        <a href="../Chocolates/chocolates.html">
+          <li>Chocolates</li>
+        </a>
+        <a href="../Macarons/macarons.html">
+          <li>Macarons</li>
+        </a>
+        <a href="../Biscuits/biscuits.html">
+          <li>Biscuits</li>
+        </a>
+        <a href="../About Us/about-us.html">
+          <li>About us</li>
+        </a>
+        <li>Cart</li>
+      </ul>
+      <div class="cart">
+        <div class="items">0</div>
+        <img src="../Common Images/cart.svg" alt="cart" />
+      </div>
+    </header>
+
+    <section class="empty-cart">
+      <img src="Images/empty-cart.svg" alt="empty cart" />
+      <div class="description">
+        <span class="title">Your cart is empty</span>
+        <p>You can choose some products from our categories below.</p>
+      </div>
+    </section>
+
+    <section class="introduction">
+      <span class="title">Shopping Cart</span>
+      <p>You have <span id="productsNumber"></span> products in your cart</p>
+    </section>
+
+    <section class="products"></section>
+
+    <section class="total">
+      <span class="title">Cart Total</span>
+      <div class="cart-categories">
+        <div class="category">
+          <p>Products:</p>
+          <p id="total-products">0</p>
+        </div>
+
+        <div class="category">
+          <p>Quantity:</p>
+          <p id="total-quantity">0</p>
+        </div>
+
+        <div class="category">
+          <p>Cart Total:</p>
+          <p id="total-price">0.00</p>
+        </div>
+      </div>
+      <button type="button">Apply</button>
+    </section>
+
+    <section class="other-categories">
+      <span class="title">Choose From Our Categories</span>
+      <div class="categories">
+        <a href="../Cakes/cakes.html">
+          <div class="category">
+            <img src="../Cakes/Images/img2.png" alt="cake" />
+            <span class="title">Cakes</span>
+          </div>
+        </a>
+
+        <a href="../Chocolates/chocolates.html">
+          <div class="category">
+            <img src="../Chocolates/Images/img13.png" alt="chocolate" />
+            <span class="title">Chocolates</span>
+          </div>
+        </a>
+
+        <a href="../Macarons/macarons.html">
+          <div class="category">
+            <img src="../Macarons/Images/img6.png" alt="macaron" />
+            <span class="title">Macarons</span>
+          </div>
+        </a>
+
+        <a href="../Biscuits/biscuits.html">
+          <div class="category">
+            <img src="../Biscuits/Images/img15.png" alt="biscuits" />
+            <span class="title">Biscuits</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="../Common Images/instagram.svg" alt="instagram" />
+      </a>
+      <div class="contacts">
+        <p>marketing@sosweet.com</p>
+        <p>hr@sosweet.com</p>
+      </div>
+      <div class="contacts">
+        <p>manager@sosweet.com</p>
+        <p>sales@sosweet.com</p>
+      </div>
+
+      <a href="https://www.facebook.com/" target="_blank">
+        <img src="../Common Images/facebook.svg" alt="facebook" />
+      </a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
